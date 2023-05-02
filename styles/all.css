@@ -55,6 +55,11 @@ h2, p {
 .start .content h1 {
   font-size: 7.5rem;
 }
+@media (max-width: 789px) {
+  .start .content h1 {
+    font-size: 4.5rem;
+  }
+}
 .start .content p {
   font-size: 1.7rem;
   margin: 1rem 0;
@@ -85,7 +90,7 @@ h2, p {
   padding: 1.5rem;
   background: #fc4946;
   border-radius: 0.4rem;
-  box-shadow: 1px 1px 1px 3px #111;
+  box-shadow: 1px 1px 3px 1px rgba(17, 17, 17, 0.5764705882);
 }
 .services .container .box h2 {
   font-size: 1.8rem;
