@@ -8,8 +8,18 @@
 
 html {
   font-size: 62.5%;
-  font-size: 55.5%;
 }
+@media (max-width: 991px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+@media (max-width: 769px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -59,7 +69,7 @@ h2, p {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 0.77fr);
-  gap: 0.2rem;
+  gap: 2rem;
 }
 @media (max-width: 991px) {
   .services .container {
@@ -74,7 +84,8 @@ h2, p {
 .services .container .box {
   padding: 1.5rem;
   background: #fc4946;
-  border-radius: 0.5ren;
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 1px 3px #111;
 }
 .services .container .box h2 {
   font-size: 1.8rem;
