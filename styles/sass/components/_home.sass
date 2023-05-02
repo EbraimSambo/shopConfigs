@@ -1,3 +1,4 @@
+@use '../helpers/functions'
 .start
     background: url(../assets/img/bg-1.jpeg) no-repeat
     background-size: cover
@@ -28,6 +29,10 @@
         width: 100%
         display: grid
         grid-template-columns: repeat(3, 0.77fr)
+        @include functions.responsive(991px)
+            grid-template-columns: repeat(2, 0.77fr)
+        @include functions.responsive(789px)
+            grid-template-columns: repeat(1, 100%)
         gap: .2rem
         
         .box
